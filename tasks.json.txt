@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build-keylogger",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "advanced_keylogger.c",
+        "-o",
+        "keylogger.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build-decrypt",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "decrypt.c",
+        "-o",
+        "decrypt.exe"
+      ],
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
